@@ -11,6 +11,7 @@ b="\033[0;34m" # Blue
 P="\033[0;35m" # Purple
 C="\033[0;36m" # Cyan
 W="\033[0;37m" # White
+#####################################################
 import os,system.hashlib
 os.system('clear')
 print '''         
