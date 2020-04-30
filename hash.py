@@ -11,15 +11,14 @@ b="\033[0;34m" # Blue
 P="\033[0;35m" # Purple
 C="\033[0;36m" # Cyan
 W="\033[0;37m" # White
-
 import os,system.hashlib
 os.system('clear')
 print '''         
-          +-------------Encrypt v1.0-----------+
-          |     [+] welcome White hat          |
-          |     [+] Programmer: Ahmed Mohamed  |
-          |     [+] Egypt                      |
-          |     [+] Gthub:AL-AlamySploit       |
+          +----------------INFO----------------+
+          |    [+] Programmer:Ahmed Mohamed    |
+          |    [+] Channel:AL-Alamy Tube       |
+          |    [+] Gthub:AL-AlamySploit        |
+          |         [+] Encrypt v1.0           |
           +------------------------------------+
           
          [01] Base64
@@ -34,7 +33,7 @@ print '''
          [10] SHA-512
       [00] Exit
       '''
-A1 = raw_input('ERT >> ')
+A1 = raw_input('Encrypt > ')
 ######################################################
 if A1 == '1' :
     import base64
@@ -42,7 +41,7 @@ if A1 == '1' :
     [1] Encrypt
     [2] Decrypt
     '''
-    A1 = raw_input('ERT >> ')
+    A1 = raw_input('Encrypt > ')
     if A1 == '1' :
     encrypt = raw_input('Anything for Encryption: ')
     en=base64.b64encode(encrypt)
@@ -58,7 +57,7 @@ elif A1 == '2' :
     [1] Encrypt
     [2] Decrypt
     '''
-    A1 = raw_input('ERT >> ')
+    A1 = raw_input('Encrypt > ')
     if A1 == '1' :
     encrypt = raw_input('Anything for Encryption: ')
     et=base64.b32encode(encrypt)
@@ -74,7 +73,7 @@ elif A1 == '3' :
     [1] Encrypt
     [2] Decrypt
     '''
-    A1 = raw_input('ERT >> ')
+    A1 = raw_input('Encrypt > ')
     if A1 == '1' :
     encrypt = raw_input('Anything for Encryption: ')
     ey=base64.b16encode(encrypt)
@@ -120,4 +119,4 @@ elif A1 == '10' :
     print 'Your Decryption : ' + sha512
 ######################################################
 elif A1 == '0' :
-sys.exit()
+    sys.exit()
