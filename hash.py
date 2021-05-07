@@ -14,7 +14,7 @@ W="\033[0;37m" # White
 #####################################################
 import os,system.hashlib
 os.system('clear')
-print '''         
+print ("""         
           +----------------INFO----------------+
           |    [+] Programmer:Ahmed Mohamed    |
           |    [+] Channel:AL-Alamy Tube       |
@@ -33,7 +33,7 @@ print '''
          [09] SHA-384
          [10] SHA-512
       [00] Exit
-      '''
+      """)
 A1 = raw_input('Encrypt > ')
 ######################################################
 if A1 == '1' :
