@@ -1,5 +1,5 @@
 #Programmer: Ahmed Mohamed (AL-ALamy)
-#Channel: AL-Alamy Tube
+#Channel YouTube : AL-Alamy Tube
 #Encrypt v1.0
 #####################################################
 #colors
