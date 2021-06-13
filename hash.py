@@ -47,10 +47,10 @@ if A1 == '1' :
           encrypt = raw_input('Anything for Encryption: ')
           en=base64.b64encode(encrypt)
           print ('+G [+] Your Encryption: ' +en)
-  elif A1 == '2' :
-    decrypt = raw_input('Anything for Decryption: ')
-    de = base64.b64decode(decrypt)
-    print ('+G [+] your Decryption: ' +de)
+    elif A1 == '2' :
+          decrypt = raw_input('Anything for Decryption: ')
+          de = base64.b64decode(decrypt)
+          print ('+G [+] your Decryption: ' +de)
 ######################################################
 elif A1 == '2' :
     import base64
@@ -60,13 +60,13 @@ elif A1 == '2' :
     """)
     A1 = raw_input ("""Encrypt > """)
     if A1 == '1' :
-    encrypt = raw_input('Anything for Encryption: ')
-    et=base64.b32encode(encrypt)
-    print ('[+] Your Encryption: ' +et)
-  elif A1 == '2' :
-    decrypt = raw_input('Anything for Decryption: ')
-    dt = base64.b32decode(decrypt)
-    print ('[+] your Decryption: ' +dt)
+          encrypt = raw_input('Anything for Encryption: ')
+          et=base64.b32encode(encrypt)
+          print ('[+] Your Encryption: ' +et)
+    elif A1 == '2' :
+          decrypt = raw_input('Anything for Decryption: ')
+          dt = base64.b32decode(decrypt)
+          print ('[+] your Decryption: ' +dt)
 ######################################################
 elif A1 == '3' :
     import base64
@@ -76,13 +76,13 @@ elif A1 == '3' :
     """)
     A1 = raw_input ("""Encrypt > """)
     if A1 == '1' :
-    encrypt = raw_input('Anything for Encryption: ')
-    ey=base64.b16encode(encrypt)
-    print ('[+] Your Encryption: ' +ey)
-  elif A1 == '2' :
-    decrypt = raw_input('Anything for Decryption: ')
-    dy = base64.b16decode(decrypt)
-    print ('[+] your Decryption: ' +dy)
+          encrypt = raw_input('Anything for Encryption: ')
+          ey=base64.b16encode(encrypt)
+          print ('[+] Your Encryption: ' +ey)
+    elif A1 == '2' :
+          decrypt = raw_input('Anything for Decryption: ')
+          dy = base64.b16decode(decrypt)
+          print ('[+] your Decryption: ' +dy)
 ######################################################
 elif A1 == '4' :
     in_user = raw_input('Enter anything for Encryption : ')
