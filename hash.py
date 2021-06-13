@@ -44,7 +44,7 @@ if A1 == '1' :
     """)
     A1 = input ("""Encrypt > """)
     if A1 == '1' :
-    encrypt = input ("Anything for Encryption: ")
+    encrypt = input("Anything for Encryption: ")
     en=base64.b64encode(encrypt)
     print ("[+] Your Encryption: " +en)
   elif A1 == '2' :
