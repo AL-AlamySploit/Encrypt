@@ -7,7 +7,8 @@ B="\033[0;30m" # Black
 R="\033[0;31m" # Red
 G="\033[0;32m" # Green
 Y="\033[0;33m" # Yellow
-b="\033[0;34m" # Blue
+b="\033[1;34m" # Blue
+bs="\033[0;34m" # Blue sky
 P="\033[0;35m" # Purple
 C="\033[0;36m" # Cyan
 W="\033[0;37m" # White
@@ -16,9 +17,8 @@ import os
 import base64
 import hashlib
 
-
 os.system('clear')
-print ("""\033[0;34m \n         
+print ("""\033[1;34m          
           +----------------INFO----------------+
           |    [+] Programmer:Ahmed Mohamed    |
           |    [+] Channel:AL-Alamy Tube       |
@@ -36,10 +36,10 @@ print ("""\033[0;34m \n
          [08] SHA-256
          [09] SHA-384
          [10] SHA-512
-      [00] Exit
+         [00] Exit
       """)
-A1 = raw_input ("""\033[0;34mEncrypt > """)
-######################################################
+A1 = raw_input ("""\033[1;34mEncrypt > """)
+#Base64
 if A1 == '1' :
     import base64
     print ("""\033[0;34m
@@ -55,7 +55,7 @@ if A1 == '1' :
           decrypt = raw_input('\033[0;34mAnything for Decryption: ')
           de = base64.b64decode(decrypt)
           print ('\033[0;32m [+] your Decryption: ' +de)
-######################################################
+#Base32
 elif A1 == '2' :
     import base64
     print ("""\033[0;34m
@@ -71,7 +71,7 @@ elif A1 == '2' :
           decrypt = raw_input('\033[0;34mAnything for Decryption: ')
           dt = base64.b32decode(decrypt)
           print ('\033[0;32m[+] your Decryption: ' +dt)
-######################################################
+#Base16
 elif A1 == '3' :
     import base64
     print ("""\033[0;34m
@@ -87,41 +87,42 @@ elif A1 == '3' :
           decrypt = raw_input('\033[0;34mAnything for Decryption: ')
           dy = base64.b16decode(decrypt)
           print ('\033[0;32m[+] your Decryption: ' +dy)
-######################################################
+##md4
 elif A1 == '4' :
-    in_user = raw_input('\033[0;34mEnter anything for Encryption : ')
-    md4 = hashlib.md4(in_user).hexdigest()
-    print ('\033[0;32m[+] Your Decryption : ' + md4)
-######################################################
+#    in_user = raw_input('\033[0;34mEnter anything for Encryption : ')
+#    md4 = hashlib.md4(in_user).hexdigest()
+#    print ('\033[0;32m[+] Your Decryption : ' + md4)
+     print ("\033[0;31m[-] Not available. Please use another encryption type")
+#md5
 elif A1 == '5' :
     in_user2 = raw_input('\033[0;34mEnter anything for Encryption : ')
     md5 = hashlib.md5(in_user2).hexdigest()
     print ('\033[0;32m[+] Your Decryption : ' + md5)
-######################################################    
+#sha1    
 elif A1 == '6' :
     in_user3= raw_input('\033[0;34mEnter anything for Encryption : ')
     sha1 = hashlib.sha1(in_user3).hexdigest()
     print ('\033[0;32m[+] Your Decryption : ' + sha1)
-##################################################
+#sha224
 elif A1 == '7' :
     in_user4 = raw_input('\033[0;34mEnter anything for Encryption : ')
     sha224 = hashlib.sha224(in_user4).hexdigest()
     print ('\033[0;32m[+] Your Decryption : ' + sha224)
-######################################################
+#sha256
 elif A1 == '8' : 
     in_user5 = raw_input('\033[0;34mEnter anything for Encryption : ')
     sha256 = hashlib.sha256(in_user5).hexdigest()
     print ('\033[0;32m[+] Your Decryption : ' + sha256)
-######################################################   
+#sha384   
 elif A1 == '9' : 
     in_user6 = raw_input('\033[0;34mEnter anything for Encryption : ')
     sha384 = hashlib.sha384(in_user6).hexdigest()
     print ('\033[0;32m[+] Your Decryption : ' + sha384)
-######################################################
+#sha512
 elif A1 == '10' : 
     in_user7 = raw_input('\033[0;34mEnter anything for Encryption : ')
     sha512 = hashlib.sha512(in_user7).hexdigest()
     print ('\033[0;32m[+] Your Decryption : ' + sha512)
-######################################################
+#End
 elif A1 == '0' :
     sys.exit()
