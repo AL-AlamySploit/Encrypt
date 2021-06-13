@@ -1,4 +1,4 @@
-#Programmer: Ahmed Mohamed (AL-ALamy)
+#Programmer: Ahmed Mohamed (Al-Alamy)
 #Channel YouTube : AL-Alamy Tube
 #Encrypt v1.0
 #####################################################
