@@ -44,9 +44,9 @@ if A1 == '1' :
     """)
     A1 = raw_input ("""Encrypt > """)
     if A1 == '1' :
-    encrypt = raw_input('Anything for Encryption: ')
-    en=base64.b64encode(encrypt)
-    print ('+G [+] Your Encryption: ' +en)
+          encrypt = raw_input('Anything for Encryption: ')
+          en=base64.b64encode(encrypt)
+          print ('+G [+] Your Encryption: ' +en)
   elif A1 == '2' :
     decrypt = raw_input('Anything for Decryption: ')
     de = base64.b64decode(decrypt)
